@@ -1,5 +1,6 @@
 ﻿using System;
 using System.Globalization;
+
 namespace Exercicio
 {
     class OitavoProjeto
@@ -29,6 +30,8 @@ namespace Exercicio
                 impRend_Val = (999.99 * 0.08) + (1499.99 * 0.18) + ((salario - 4500) * impRend_Perc);
             }
             Console.WriteLine($"O valor a ser pago a título de Imposto de Renda é: R${impRend_Val.ToString("F2", CultureInfo.InvariantCulture)}!");
+        
+            Console.ReadKey();
         }
     }
 }
